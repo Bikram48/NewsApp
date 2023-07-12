@@ -26,7 +26,7 @@ export default function Slider() {
       {headlines && (
         <div className="max-w-4xl mx-auto mt-20">
           <div className="relative">
-            <div className="w-full absolute transition-all ease-in duration-1000">
+            <div className="w-full transition-all ease-in duration-1000">
               <img
                 className="opacity-80 brightness-50"
                 src={headlines[count].urlToImage}
