@@ -7,7 +7,7 @@ export default function Slider() {
   useEffect(() => {
     async function fetchData() {
       const request = await fetch(
-        "https://newsapi.org/v2/top-headlines?country=us&apiKey=1d95c2e165524a658c24a34fb01a4565"
+        "https://newsapi.org/v2/top-headlines?country=us&apiKey=5235a3e37c4f470ca8af56361d4f8148"
       );
       const resp = await request.json();
       const respData = resp.articles;
