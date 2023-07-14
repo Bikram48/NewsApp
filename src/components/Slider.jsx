@@ -15,7 +15,7 @@ export default function Slider() {
 
       setTimeout(() => {
         count === respData.length ? setCount(0) : setCount(count + 1);
-      }, 5000);
+      }, 50000);
     }
 
     fetchData();
@@ -24,20 +24,20 @@ export default function Slider() {
   return (
     <>
       {headlines && (
-        <div className="max-w-4xl mx-auto mt-20">
+        <div className="max-w-4xl mx-auto mt-10 md:mt-20 p-2">
           <div className="relative">
             <div className="w-full transition-all ease-in duration-1000">
               <img
-                className="opacity-80 brightness-50"
+                className="opacity-80 brightness-50 w-full"
                 src={headlines[count].urlToImage}
                 alt=""
               />
 
               <div className="absolute bottom-6 text-white max-w-xl ml-4">
-                <h2 className="text-3xl">
+                <h2 className="text-xl md:text-3xl">
                   {headlines[count].title.slice(0, 60)}
                 </h2>
-                <p className="mt-4">{headlines[count].description}</p>
+                {/* <p className="mt-4">{headlines[count].description}</p> */}
                 <div className="flex items-center mt-6">
                   <div className="bg-[#ff2197] h-6 w-2 mr-2"></div>
                   <p>Published at: {headlines[count].publishedAt}</p>

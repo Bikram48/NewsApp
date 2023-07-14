@@ -49,7 +49,7 @@ export default function News() {
   }, [search]);
 
   return (
-    <div className="max-w-4xl mx-auto mt-20">
+    <div className="max-w-4xl mt-10 p-6 mx-auto md:mt-20">
       <div className="flex items-center gap-2">
         <div className="w-1 h-5 bg-black"></div>
         <h2 className="text-2xl">News</h2>
@@ -63,7 +63,7 @@ export default function News() {
           />
         </form>
       </div>
-      <div className="grid grid-cols-3 gap-4 mt-6">
+      <div className="grid md:grid-cols-3 gap-8 mt-6">
         {news.map((item) => (
           <NewsCard
             image={item.urlToImage}
