@@ -15,7 +15,7 @@ export default function Slider() {
 
       setTimeout(() => {
         count === respData.length ? setCount(0) : setCount(count + 1);
-      }, 50000);
+      }, 5000);
     }
 
     fetchData();
